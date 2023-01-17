@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://imdbdadeepweb.netlify.app/ -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./IMDB da Deep Web_files/csscentral.css">
+    <title>IMDB da Deep Web</title>
+</head>
+
+<body class="vsc-initialized">
+    <header>
+        <!--<h1 style="text-align: center;"> IMDB DA DEEP WEB</h1>-->
+        <h1><img style="width: 300px; " src="./IMDB da Deep Web_files/logo.jpg"></h1>
+    </header>
+
+    <div id="menu">
+        <p>USUÁRIOS:</p>
+        <nav>
+            <a wm-link="IMDBdeep.html">
+                <img id="canc">
+                <!--<img id="sob" src="sob.png">-->
+            </a>
+
+            <a wm-link="IMDBdeep2.html">
+                <img id="stef">
+            </a>
+
+            <a wm-link="IMDBdeep3.html">
+                <img id="ant">
+            </a> <br>
+
+            <a id="voltar" href="https://imdbdadeepweb.netlify.app/index.html">
+                <button>VOLTAR</button>
+            </a>
+        </nav>
+    </div>
+
+    <section id="conteudo"></section>
+    <p id="testef"></p>
+
+
+
+
+<script>                                                   
+    document.querySelectorAll('[wm-link]').forEach(link => {            //  Esse script (js), define que para cada link com wm-link (web moderno link) (tag <a wm-link=...> )
+        const conteudo = document.getElementById('conteudo')            //  clicado (link.onclick=function(e)), o atalho dele será adicionado na tag (section) com id "conteudo"
+        link.onclick = function(e) {
+            e.preventDefault()      // certifica de que a funcao irá ocorrer
+            fetch(link.getAttribute('wm-link'))     // requisição ajax
+            .then(resp => resp.text())
+            .then(html => conteudo.innerHTML = html)
+        }
+    })
+</script>
+
+</body></html>
