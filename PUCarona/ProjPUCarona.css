@@ -1,0 +1,140 @@
+body {
+    font: 14px Trebuchet MS;
+    --color2: #79277c;
+    --color1: #b539b9;
+    background-color: var(--color2);
+}
+
+hr {
+    height: 2px;
+    border-width:0;
+    background-color: var(--color1);
+    margin: 0 1% 0 1%;
+}
+
+#janela-chamada {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgb(49, 49, 49);
+    width: auto;
+    height: 900px;
+    margin: 1%;
+}
+
+#janela-chamada > #quit-button {
+    position: absolute;
+    margin: 1% 1% 0 0;
+    height: 4%;
+    right: 0;
+}
+    #quit-button > img{
+        height: 100%;
+    }
+#janela-chamada > #quick-profile {
+    height: 15%;
+    margin: 1%;
+    padding-top: 1%;
+}
+    #quick-profile > #avatar{
+        height: 100%;
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+        #avatar>img{
+            box-shadow: 0 0 30px grey;
+            border-radius: 50%;
+            width: auto;
+            max-width: 100%;
+            max-height: 100%;
+            
+            position: relative;
+            top: 50%;
+            transform: translate(0%, -50%);
+        }
+    #quick-profile > #infos{
+        width: auto;
+        overflow-y: scroll;
+        height: 100%;
+        text-align: center;
+    }
+        #infos > p {
+            font: 15px Trebuchet MS;
+            font-weight: bold;
+            margin: 0% 0px 0.2% 0%;
+        }
+
+#janela-chamada > #car-profile {
+    margin: 1%;
+    height: 15%;
+}
+    #car-profile > #car-pic {
+        height: 100%;
+        margin: 0px;
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+        #car-pic > img {
+            position: relative;
+            margin: 0;
+            width: auto;
+            max-width: 100%;
+            max-height: 100%;
+            
+            top: 50%;
+            transform: translate(0%, -50%)
+        }
+    #car-profile > #car-info {
+        height: 100%;
+        margin: 0px;
+        width: auto;
+        text-align: center;
+    }
+        #car-info > #texto-carro {
+            position: relative;
+            
+            top: 50%;
+            transform: translate(0%, -50%)
+        }
+        #texto-carro > h2 {
+            margin: 0 0 1% 0;
+        }
+
+        #texto-carro > p {
+            font: 15px Trebuchet MS;
+            font-weight: bold;
+            margin: 0.2% 0px 0px 0px;
+        }
+#janela-chamada > #down-infos {
+    height:60%;
+    margin: 1%;
+}
+    #down-infos > #chat-area {
+        height: 75%;
+        background-color: rgb(235, 235, 235);
+    }
+    #down-infos > .button {
+        height: 17%;
+        margin: 1% 0 1% 0;
+    }
+    #acenar {
+        width: 100%;
+        height: 100%;
+        
+        border-radius: 10px;
+        background-color: var(--color1);
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 26px;
+        cursor: pointer;
+
+        box-shadow: 0 0 10px grey;
+        transition-duration: 0.3s;
+    }
+
+    #acenar:hover{
+        background-color: var(--color2);
+    }

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ProjPUCarona.css">
+    <title>PUCarona Chamada</title>
+    <style>
+        /*.destaque{
+            border: solid 4px black
+
+        }
+        .greenmode{
+            --color1: rgb(0, 162, 0);
+            --color2: rgb(0, 110, 0);
+        }
+        .purplemode{
+            --color2: #79277c;
+            --color1: #b539b9;
+        }*/
+    </style>
+</head>
+<body>
+    
+    
+    <div id="janela-chamada">
+        <div id="quit-button">
+            <img src="quit.png">
+        </div>
+
+        <div id="quick-profile">
+
+            <div id="avatar">
+                <img src="canc.png">
+                <!--ENVIAR PARA O MEIO-->
+            </div>
+
+            <div id="infos">
+                <h2 id="nome">Felipe C. D. Cancella</h2>
+                <p id="idade">18 anos</p>
+                <p id="curso">Ciencia da computacao - 2P </p>
+                <p id="tempodeapp">Carona a 3 meses</p>
+                <p id="caronascomum">11 caronas em comum</p>
+                <p id="estrelas">5 estrelas</p>
+                <p id="viagens">42 viagens</p>
+            </div>
+            
+        </div>
+
+        <hr>
+
+        
+        <div id="car-profile">
+            <div id="car-pic">
+                <img src="hb20.png">
+            </div>
+
+            <div id="car-info">
+                <section id="texto-carro">
+                    <h2 id="modelo">Hyundai HB20</h2>
+                    <p id="ano">Modelo 2021</p>
+                    <p id="km">1312km rodados</p>
+                </section>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="down-infos">
+            <div id="chat-area">
+                <!-- <div id="area", style="height: 84%; background-color: rgb(235, 235, 235); margin: 1%;overflow-y: scroll;">
+                </div>
+                <div id="msg", style="height: 14%; position: relative; top: 0;">
+                    <textarea placeholder="Digite sua mensagem..." cols="50" rows="3" style="resize: none; margin: 1%"></textarea>
+                    <img src="send.png" style="position: absolute; margin: 0; margin-left: 3%; height: 100%; right: 0; text-align: center;">
+                </div> -->
+            </div >
+                
+            <div class="button">
+                <button id="acenar" onclick="mudar()">Acenar</button>
+            </div>
+        </div>
+
+
+
+    </div>
+       
+    <script>
+        const roxoClaro = '#b539b9'
+        const roxoEscuro = '#79277c'
+        const verdeClaro = 'rgb(0, 162, 0)'
+        const verdeEscuro ='rgb(0, 110, 0)'
+        
+        //DEFAULT
+        document.body.style.setProperty('--color1', roxoClaro)
+        document.body.style.setProperty('--color2', roxoEscuro)
+
+        function mudar(){
+            var color = document.body.style.getPropertyValue('--color1')
+            var color2 = document.body.style.getPropertyValue('--color2')
+            console.log("Esta: " + color)
+            console.log("Esta: " + color2)
+
+            if (color == roxoClaro){
+                document.body.style.setProperty('--color1', verdeClaro)
+                document.body.style.setProperty('--color2', verdeEscuro)
+
+                color = document.body.style.getPropertyValue('--color1')
+                color2 = document.body.style.getPropertyValue('--color2')
+                console.log("Ficou: " + color)
+                console.log("Ficou: " + color2)
+            }
+            else{
+                document.body.style.setProperty('--color1', roxoClaro)
+                document.body.style.setProperty('--color2', roxoEscuro)
+
+                color = document.body.style.getPropertyValue('--color1')
+                color2 = document.body.style.getPropertyValue('--color2')
+                console.log("Ficou2: " + color)
+                console.log("Ficou2: " + color2)
+            }
+            console.log('-')
+        }
+    </script>
+</body>
+</html>
