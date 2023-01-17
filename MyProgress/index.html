@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página da aula 213</title>
+    <style>
+        #conteudo{
+            padding: 10px;              /* Usanso CSS basico paraa criar espançamento antes e depois da section com id conteudo*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <h1>Exercícios de HTML</h1>
+    </header>
+    <nav>
+        <a href wm-link=Exercicios/teste1.html>1 - Teste</a> |        <!-- href só serve ppara sublinhar como link-->
+        <a href wm-link=Exercicios/TagsDeTexto.html>2 - Tags de texto</a> |
+        <a href wm-link=Exercicios/TagsDeTexto2.html>3 - Tags de texto 2</a> |
+        <a href wm-link=Exercicios/Listas.html>4 - Listas</a> |
+        <a href wm-link=Exercicios/ListaAninhada.html>5 - Lista Aninhada</a> |
+        <a href wm-link=Exercicios/Links.html>6 - Links</a> |
+        <a href wm-link=Exercicios/Tabelas.html>7 - Tabelas</a> |
+    </nav>
+    <section id="conteudo"></section>
+    <hr>
+    <footer>
+        Curso de Desenvolvimento WEB
+    </footer>                                                       
+    <script>                                                   
+        document.querySelectorAll('[wm-link]').forEach(link => {            //  Esse script (js), define que para cada link com wm-link (web moderno link) (tag <a wm-link=...> )
+            const conteudo = document.getElementById('conteudo')            //  clicado (link.onclick=function(e)), o atalho dele será adicionado na tag (section) com id "conteudo"
+            link.onclick = function(e) {
+                e.preventDefault()      // certifica de que a funcao irá ocorrer
+                fetch(link.getAttribute('wm-link'))     // requisição ajax
+                .then(resp => resp.text())
+                .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+</html>

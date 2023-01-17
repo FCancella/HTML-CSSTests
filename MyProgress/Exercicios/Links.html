@@ -1,0 +1,24 @@
+<h1>Links</h1>
+
+<!--URL absoluta-->
+<a id="inicio" href="http://www.google.com.br">Google 1</a> <br>
+<a href="http://www.google.com.br" target="_blank">Google 2</a> <br> <br> <!-- target="_blank" significa uma aba em branco-->
+
+
+<!-- URL Relativa-->
+<a href="index.html">Voltar 1</a> | <!-- Procura o caminho(no caso Estru..Excs) SOMENTE dentro da pasta/local onde ele está (pasta html nesse caso).-->
+<a href="/index.html">Voltar 2</a> | <!-- Procura o caminho dentro de TODA a pasta principal em q está (html nesse caso. Pastat raiz da aplicação). Ele acharia um arquivo em uma outra pasta dentro de "html"--> 
+<a href="../index.html">Voltar 3</a> <br> <!-- o ".." significa duas /. No caso ele está movendo/saindo de duas pastas-->
+
+
+<!-- Link de email-->
+<a href="mailto:cancellacdc@gmail.com">Entre em contato com o proprietário</a> <br> <br>
+
+
+<!-- Link de direcionamento/navegacao dentro da página-->
+<div id="noticia" style="position:absolute;top:2000px">
+    <h1>Notícia Bombastica!</h1>
+    <a href="#inicio">Voltar ao inicio</a>
+</div>
+
+<a href="#noticia">IR PARA NOTÍCIA BOMBASTICA !</a>

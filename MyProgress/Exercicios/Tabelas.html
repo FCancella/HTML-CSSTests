@@ -1,0 +1,58 @@
+<table> <!--border="1"-->    <!-- ao inves de "border", o corretor é estilisar com css-->
+    <caption>Produtos da Loja</caption>
+     <thead>                        <!-- define a area do cabecalho da tabela. É opcional -->
+         <tr>                       <!-- table row -->
+             <th>Produto</th>       <!--table head -->
+             <th>Preço</th>
+             <th>Quantidade</th>
+             <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>                         <!-- Informacoes do corpo da tabela -->
+        <tr>                        <!-- linhas da tabela. table row -->
+            <td>iPad</td>           <!-- table data-->
+            <td>R$ 3.280,00</td>
+            <td>5 und.</td>
+            <td>R$ 16.400,00</td>
+        </tr>
+        <tr>                        
+            <td>iPhone</td>           
+            <td>R$ 4.280,00</td>
+            <td>2 und.</td>
+            <td>R$ 8.560,00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total</td>      <!-- usei a propriedade colspan (existe rowspan para linhas) para definir quantas colunas o dado vai ocupar-->
+            <td>R$ 24.960,00</td>
+        </tr>
+    </tfoot>
+</table>
+
+<style>
+    table {
+        border-collapse: collapse;
+      /*border-left: solid 3px red;
+        border-right: solid 3px red;*/
+      /*border: solid 3px rgb(255, 0, 0);*/
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    thead tr {
+        border-bottom: solid 3px rgb(0, 0, 0)
+    }
+
+    tbody tr:hover {                        /* "tbody tr" seleciona os tr dentro de tbody, e hover é quando o mouse estiver em cima*/
+        background-color: rgb(202, 202, 202);
+    }
+
+    tfoot {
+        background-color: rgb(119, 119, 119);
+        font-weight: bold;
+    }
+
+</style>
