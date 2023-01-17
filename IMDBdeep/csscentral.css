@@ -1,0 +1,82 @@
+/*Fonte*/
+body {
+    font: 20px Trebuchet MS;
+}
+
+/*Background*/
+body {
+    background-image: url("wpp.jpg");           
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover 150%;
+}
+
+
+
+
+/*nav img:hover {
+    border: solid 5px black;
+    transition: .5s ease;
+}*/
+
+
+#ant:hover, #stef:hover, #canc:hover{
+    background-size: 120%;
+    transition: 1s;
+}
+
+
+div > p {
+    font-size: 18px;
+    font-weight: bold;
+}
+section {
+    /*position: absolute;*/
+    text-align: center;
+    left: 300px;
+    right: 300px;
+}
+h1 {
+    font-size: 50px;
+    border-bottom: solid 2px;
+    text-align: center;
+}
+
+a > img {
+    border: solid 2px black;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#canc {
+    width: 80px;
+    height: 80px;
+    background-image: url("canc.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#stef {
+    width: 80px;
+    height: 80px;
+    background-image: url("stef.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#ant {
+    width: 80px;
+    height: 80px;
+    background-image: url("ant.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#menu {
+    text-align: center;
+}

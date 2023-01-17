@@ -1,0 +1,60 @@
+div > table {
+    margin-top: 50px;
+}
+
+body {
+    font: 20px Trebuchet MS;
+}
+table {
+    border-collapse: collapse;
+    margin:auto;
+    /*margin-top: 20px;*/
+    border-bottom: solid 2px black;
+}
+
+tbody tr:hover {
+    background-color: rgb(220, 220, 220);
+    font-size: 110%;
+    font-weight: bold;
+}
+
+tbody {
+    font-size: 18px;
+    background-color: rgb(250, 250, 250);
+}
+
+thead {
+    background-color: rgb(213, 213, 213);
+    font-size: 20px;
+    border-bottom: solid 1px black;
+}
+
+caption {
+    font-size: 40px;
+    margin: 20px;
+}
+
+#nome {
+    padding-right: 120px;
+    padding-left: 120px;
+}
+
+#ano, #nota, #pos {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+th, td {
+    text-align:center;
+    padding: 5px;
+}
+
+.estrela {
+    width:15px;
+    padding-right:5px;
+}
+
+.capa {
+    width:38px;
+    border: 2px solid rgb(202, 202, 202);
+}
